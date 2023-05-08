@@ -10,9 +10,9 @@ public class PlayerController : MonoBehaviour
 
     public float xRange;
 
-    public Transform blaster;
+    public Transform BlasterWork;
 
-    public GameObject LazerBolt;
+   public GameObject Lazer_Bolt;
 
 
 
@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.Space))
         {
             //Creates LazerBolt at the blaster transdorm potition maintaining the objects rotation.
-            Instantiate(LazerBolt, blaster.position, LazerBolt.transform.rotation);
+            Instantiate(Lazer_Bolt, BlasterWork.position, Lazer_Bolt.transform.rotation);
         }
 
     
